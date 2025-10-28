@@ -1,1 +1,7 @@
 /* Taruh CSS Custom Disini */
+.app-header{
+    background-color:  rgb(16, 132, 233)!important;
+}
+.sidebar-brand{
+    background-color: rgb(17, 132, 233)!important;
+}

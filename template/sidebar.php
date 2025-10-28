@@ -2,7 +2,7 @@
     <div class="sidebar-brand">
         <a href="index.php" class="brand-link">
             <img src="assets/img/logo.png" alt="AdminLTE Logo" class="brand-image opacity-75 shadow" />
-            <span class="brand-text fw-light">SICMAS-CRUD</span>
+            <span class="brand-text fw-light">DENA GYM</span>
         </a>
     </div>
 
@@ -19,19 +19,19 @@
                 <li class="nav-item">
                     <a href="data-input.php" class="nav-link">
                         <i class="nav-icon bi bi-clipboard-data-fill"></i>
-                        <p>Input Mahasiswa</p>
+                        <p>Input Member</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="data-list.php" class="nav-link">
                         <i class="nav-icon bi bi-card-list"></i>
-                        <p>Daftar Mahasiswa</p>
+                        <p>Daftar Member</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="data-search.php" class="nav-link">
                         <i class="nav-icon bi bi-search-heart-fill"></i>
-                        <p>Cari Mahasiswa</p>
+                        <p>Cari Member</p>
                     </a>
                 </li>
                 <li class="nav-header">MASTER DATA</li>
