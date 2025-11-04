@@ -38,7 +38,7 @@
                 <li class="nav-item">
                     <a href="master-prodi-list.php" class="nav-link">
                         <i class="nav-icon bi bi-building"></i>
-                        <p>Program Studi</p>
+                        <p>Program Latihan</p>
                     </a>
                 </li>
                 <li class="nav-item">

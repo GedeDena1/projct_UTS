@@ -54,7 +54,7 @@ if(isset($_GET['status'])){
 							<div class="col-12">
 								<div class="card">
 									<div class="card-header">
-										<h3 class="card-title">Formulir Mahasiswa</h3>
+										<h3 class="card-title">Formulir Mmember</h3>
 										<div class="card-tools">
 											<button type="button" class="btn btn-tool" data-lte-toggle="card-collapse" title="Collapse">
 												<i data-lte-icon="expand" class="bi bi-plus-lg"></i>
@@ -67,22 +67,22 @@ if(isset($_GET['status'])){
 									</div>
                                     <form action="proses/proses-input.php" method="POST">
 									    <div class="card-body">
-                                            <div class="mb-3">
+                                             <!-- <div class="mb-3">
                                                 <label for="nim" class="form-label">Nomor Induk Mahasiswa (NIM)</label>
                                                 <input type="number" class="form-control" id="nim" name="nim" placeholder="Masukkan NIM Mahasiswa" required>
-                                            </div>
+                                            </div>  -->
                                             <div class="mb-3">
                                                 <label for="nama" class="form-label">Nama Lengkap</label>
-                                                <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama Lengkap Mahasiswa" required>
+                                                <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama Lengkap Member" required>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="prodi" class="form-label">Program Studi</label>
-                                                <select class="form-select" id="prodi" name="prodi" required>
-                                                    <option value="" selected disabled>Pilih Program Studi</option>
+                                                <label for="program" class="form-label">Program Latihan</label>
+                                                <select class="form-select" id="program" name="program" required>
+                                                    <option value="" selected disabled>Pilih Program Latihan</option>
                                                     <?php 
                                                     // Iterasi daftar program studi dan menampilkannya sebagai opsi dalam dropdown
-                                                    foreach ($prodiList as $prodi){
-                                                        echo '<option value="'.$prodi['id'].'">'.$prodi['nama'].'</option>';
+                                                    foreach ($prodiList as $program){
+                                                        echo '<option value="'.$program['id'].'">'.$program['nama'].'</option>';
                                                     }
                                                     ?>
                                                 </select>
@@ -109,9 +109,9 @@ if(isset($_GET['status'])){
                                             </div>
                                             <div class="mb-3">
                                                 <label for="telp" class="form-label">Nomor Telepon</label>
-                                                <input type="tel" class="form-control" id="telp" name="telp" placeholder="Masukkan Nomor Telpon/HP" pattern="[0-9+\-\s()]{6,20}" required>
+                                                <input type="tel" class="form-control" id="telp" name="telp" placeholder="Masukkan Nomor Telpon/HP" required>
                                             </div>
-                                            <div class="mb-3">
+                                             <div class="mb-3">
                                                 <label for="status" class="form-label">Status</label>
                                                 <select class="form-select" id="status" name="status" required>
                                                     <option value="" selected disabled>Pilih Status</option>
@@ -122,7 +122,7 @@ if(isset($_GET['status'])){
                                                     }
                                                     ?>
                                                 </select>
-                                            </div>
+                                            </div> 
                                         </div>
 									    <div class="card-footer">
                                             <button type="button" class="btn btn-danger me-2 float-start" onclick="window.location.href='data-list.php'">Batal</button>

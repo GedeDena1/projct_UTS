@@ -3,7 +3,7 @@
 // Silakan lihat komentar di file data-edit.php untuk penjelasan kode ini, karena struktur dan logikanya serupa.
 include_once 'config/class-master.php';
 $master = new MasterData();
-$dataProdi = $master->getUpdateProdi($_GET['id']);
+$dataProgram = $master->getUpdateProdi($_GET['id']);
 if(isset($_GET['status'])){
     if($_GET['status'] == 'failed'){
         echo "<script>alert('Gagal mengubah data program studi. Silakan coba lagi.');</script>";
@@ -31,7 +31,7 @@ if(isset($_GET['status'])){
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-sm-6">
-								<h3 class="mb-0">Edit Program Studi</h3>
+								<h3 class="mb-0">Edit Program Latihan</h3>
 							</div>
 							<div class="col-sm-6">
 								<ol class="breadcrumb float-sm-end">
@@ -49,7 +49,7 @@ if(isset($_GET['status'])){
 							<div class="col-12">
 								<div class="card">
 									<div class="card-header">
-										<h3 class="card-title">Formulir Program Studi</h3>
+										<h3 class="card-title">Formulir Program latihan</h3>
 										<div class="card-tools">
 											<button type="button" class="btn btn-tool" data-lte-toggle="card-collapse" title="Collapse">
 												<i data-lte-icon="expand" class="bi bi-plus-lg"></i>
@@ -64,11 +64,11 @@ if(isset($_GET['status'])){
 									    <div class="card-body">
                                             <div class="mb-3">
                                                 <label for="nama" class="form-label">Kode Program</label>
-                                                <input type="text" class="form-control-plaintext" id="kode" name="kode" placeholder="Masukkan Kode Program Studi" value="<?php echo $dataProdi['id']; ?>" required readonly>
+                                                <input type="text" class="form-control-plaintext" id="kode" name="kode" placeholder="Masukkan Kode Program latihan" value="<?php echo $dataProgram['id']; ?>" required readonly>
                                             </div>
 											<div class="mb-3">
-												<label for="nama" class="form-label">Nama Program Studi</label>
-												<input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama Program Studi" value="<?php echo $dataProdi['nama']; ?>" required>
+												<label for="nama" class="form-label">Nama Program Latihan</label>
+												<input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama Program Latihan" value="<?php echo $dataProgram['nama']; ?>" required>
 											</div>
                                         </div>
 									    <div class="card-footer">

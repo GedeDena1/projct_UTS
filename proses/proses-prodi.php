@@ -7,12 +7,12 @@ $master = new MasterData();
 // Mengecek aksi yang dilakukan berdasarkan parameter GET 'aksi'
 if($_GET['aksi'] == 'inputprodi'){
     // Mengambil data prodi dari form input menggunakan metode POST dan menyimpannya dalam array
-    $dataProdi = [
+    $dataProgram = [
         'kode' => $_POST['kode'],
         'nama' => $_POST['nama']
     ];
     // Memanggil method inputProdi untuk memasukkan data prodi dengan parameter array $dataProdi
-    $input = $master->inputProdi($dataProdi);
+    $input = $master->inputProdi($dataProgram);
     if($input){
         // Jika berhasil, redirect ke halaman master-prodi-list.php dengan status inputsuccess
         header("Location: ../master-prodi-list.php?status=inputsuccess");
@@ -22,19 +22,19 @@ if($_GET['aksi'] == 'inputprodi'){
     }
 } elseif($_GET['aksi'] == 'updateprodi'){
     // Mengambil data prodi dari form edit menggunakan metode POST dan menyimpannya dalam array
-    $dataProdi = [
-        'id' => $_POST['id'],
+    $dataProgram = [
+   
         'kode' => $_POST['kode'],
         'nama' => $_POST['nama']
     ];
     // Memanggil method updateProdi untuk mengupdate data prodi dengan parameter array $dataProdi
-    $update = $master->updateProdi($dataProdi);
+    $update = $master->updateProdi($dataProgram);
     if($update){
         // Jika berhasil, redirect ke halaman master-prodi-list.php dengan status editsuccess
         header("Location: ../master-prodi-list.php?status=editsuccess");
     } else {
         // Jika gagal, redirect ke halaman master-prodi-edit.php dengan status failed dan membawa id prodi
-        header("Location: ../master-prodi-edit.php?id=".$dataProdi['id']."&status=failed");
+        header("Location: ../master-prodi-edit.php?id=".$dataProgram['id']."&status=failed");
     }
 } elseif($_GET['aksi'] == 'deleteprodi'){
     // Mengambil id prodi dari parameter GET

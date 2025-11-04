@@ -1,7 +1,36 @@
 /* Taruh CSS Custom Disini */
-.app-header{
-    background-color:  rgb(16, 132, 233)!important;
+ .app-header{
+    background-color:  #dba9fa!important;
 }
 .sidebar-brand{
-    background-color: rgb(17, 132, 233)!important;
+    background-color:  #7dbae9 !important;
+}
+.app-content-header { 
+    background-color: #ffffff !important; 
+    color: white !important; 
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+} 
+.app-main {
+    background-color: #dba9fa!important;
+}
+.sidebar-wrapper{
+    background-color: #7dbae9 !important;
+}
+.app-content-header h3 { 
+    color: #000000 !important; 
+    font-weight: 700 !important;
+}
+body{
+    font-family: "Momo Trust Display", sans-serif!important;
+}
+.nav-link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+    color: black!important;
+} 
+.nav-header{
+    color: black!important;
+}
+.navbar-expand {
+    color: beige;
 }
